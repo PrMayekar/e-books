@@ -1,0 +1,93 @@
+/* Overall layout for the payment page */
+.payment-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f4f6, #ffffff);
+}
+
+.payment-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.payment-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-summary {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+}
+
+.payment-summary h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.payment-summary p {
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.payment-summary .total {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #ff8c00;
+}
+
+/* Razorpay button styling */
+.razorpay-btn {
+  background-color: #ffb700;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.razorpay-btn:hover {
+  background-color: #ff8c00;
+}
+
+/* Back to cart button styling */
+.back-to-cart-btn {
+  background-color: #ff8c00;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  width: 100%;
+}
+
+.back-to-cart-btn:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .payment-container {
+    padding: 1.5rem;
+  }
+}

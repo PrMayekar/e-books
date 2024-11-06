@@ -1,0 +1,45 @@
+.cart-layout {
+  padding: 5%;
+}
+
+.cart-layout .cart {
+  margin-bottom: 1rem;
+  /* Additional styling */
+  border-bottom: 1px solid #ddd; /* Light border for visual separation */
+  padding-bottom: 1rem; /* Extra padding for spacing */
+}
+
+/
+.cart-layout .proceed-to-payment {
+  display: block;
+  width: 
+  background-color: #4caf50; 
+  color: white; 
+  padding: 15px 20px; 
+  border: none; 
+  font-size: 18px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  text-align: center; 
+  margin-top: 20px; 
+  transition: background-color 0.3s ease; 
+}
+
+.cart-layout .proceed-to-payment:hover {
+  background-color: #45a049; 
+}
+
+@media (max-width: 768px) {
+  .cart-layout {
+    padding: 2%;
+  }
+
+  .cart-layout .cart {
+    margin-bottom: 0.5rem; 
+  }
+
+  .cart-layout .proceed-to-payment {
+    padding: 12px 15px; 
+    font-size: 16px; 
+  }
+}

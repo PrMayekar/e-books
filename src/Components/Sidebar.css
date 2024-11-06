@@ -1,0 +1,50 @@
+.sidebar {
+  width: 250px;
+  padding: 20px; /* Increased padding for better spacing */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for background and shadow */
+  overflow-y: auto; /* Ensures scrollbar if content overflows */
+  max-height: 80vh; /* Limits the sidebar height */
+}
+
+.sidebar:hover {
+  background-color: #e9ecef; /* Subtle change on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.sidebar h3 {
+  font-size: 1.5rem; /* Larger font size */
+  color: #000000;
+  margin-bottom: 20px; /* Reduced margin for better balance */
+}
+
+.category-list {
+  list-style: cross-fade(); /* Removed default list style */
+  padding: 0; /* Removed padding for a cleaner look */
+  margin: 0; /* Removed margin for cleaner layout */
+  display: flex; /* Set display to flex */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.category-item {
+  padding: 15px; /* Increased padding for better click area */
+  margin-bottom: 10px; /* Increased margin for better spacing */
+  border-radius: 8px; /* More rounded corners */
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+.category-item:hover {
+  background-color: #ff8800; /* Changed to primary color */
+  color: #fff; /* White text on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.category-item.active {
+  background-color: #ef6e37; /* Darker active color */
+  color: #da773a; /* White text for active state */
+}

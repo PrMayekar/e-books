@@ -1,0 +1,135 @@
+/* Cart Container Styling */
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid #ddd; /* Lighter border for a modern look */
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem; /* More spacing between items */
+  background-color: #fff; /* Clean white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease; /* Hover effect */
+}
+
+.cart-container:hover {
+  transform: scale(1.02); /* Slight zoom on hover for emphasis */
+}
+
+.cart-img-container {
+  width: 8rem;
+  height: auto;
+  overflow: hidden;
+  border-radius: 0.3rem; /* Slightly rounded corners for image */
+}
+
+.cart-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.3rem;
+}
+
+.cart-items {
+  flex: 1;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-item-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; /* Darker text for better readability */
+}
+
+.cart-item-description {
+  font-size: 0.9rem;
+  color: #777; /* Subtle description text */
+  margin-top: 0.5rem;
+}
+
+.cart-item-price {
+  margin-top: 1rem;
+  color: #ff4d4d; /* Use a vibrant orange color for the price */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.remove-btn {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.remove-btn button {
+  background-color: #ff4d4d; /* Red background for remove button */
+  color: white; /* White text */
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer; /* Indicate that it's clickable */
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.remove-btn button:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+
+/* Payment button styling */
+.proceed-to-payment {
+  display: block;
+  width: 100%; /* Full-width button */
+  background-color: #ff4d4d; /* Green background */
+  color: white; /* White text */
+  padding: 15px 20px; /* Padding for size */
+  border: none;
+  font-size: 18px; /* Larger text */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Space above the button */
+  border-radius: 0.3rem; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proceed-to-payment:hover {
+  background-color: #ff1a1a; /* Darker green on hover */
+}
+
+/* Total Price Section */
+.total-price {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+.cart-layout {
+  padding: 2rem 5%;
+  background-color: #f4f4f4; /* Soft background color for the cart layout */
+  border-radius: 1rem; /* Rounded corners for the entire layout */
+  max-width: 1200px; /* Limit the width on large screens */
+  margin: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cart-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to start on smaller screens */
+  }
+
+  .cart-items {
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+
+  .proceed-to-payment {
+    padding: 12px 15px; /* Slightly reduced padding for smaller screens */
+    font-size: 16px; /* Smaller font size for smaller screens */
+  }
+}

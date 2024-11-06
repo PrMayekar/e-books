@@ -1,0 +1,83 @@
+/* General header styling */
+header {
+  color: white;
+  background-color: #aa3304; /* Background color for header */
+  width: 100%;
+  position: sticky; /* Sticky positioning for header */
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  padding: 1rem 2rem; /* Padding for spacing */
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  justify-content: space-between; /* Space between logo and navigation links */
+  align-items: center;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navigation styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #aa3304; /* Background color for navigation links */
+  display: flex; /* Flexbox for layout */
+  justify-content: flex-end; /* Align items to the end (right) */
+}
+
+li {
+  margin-left: 1rem; /* Space between links */
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px; /* Padding for links */
+  text-decoration: none;
+  border-radius: 0.3rem; /* Rounded corners for links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+li a:hover,
+li a.active {
+  background-color: #111; /* Darker background on hover or active state */
+  color: #f9f9f9; /* Light text color on hover or active state */
+}
+
+/* Logout button specific styling */
+.Logout a {
+  color: #ff4d4d; /* Red color for logout */
+}
+
+.Logout a:hover {
+  color: #d43f3a; /* Darker red on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  li a {
+    padding: 10px;
+  }
+}

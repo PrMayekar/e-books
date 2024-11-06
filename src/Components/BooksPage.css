@@ -1,0 +1,36 @@
+/* BooksPage.css */
+
+.books-page {
+  display: flex; /* Use flexbox for layout */
+  padding: 20px;
+}
+
+.sidebar {
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #f8f9fa; /* Background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 20px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.content {
+  flex-grow: 1; /* Allow content to grow */
+  padding-left: 20px; /* Space between sidebar and content */
+}
+
+.content h1 {
+  font-size: 1.5rem; /* Title font size */
+  color: #333; /* Title color */
+  margin-bottom: 10px; /* Margin below title */
+}
+
+.book-grid {
+  display: grid; /* Use grid layout for books */
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.loading {
+  text-align: center; /* Center loading text */
+}
